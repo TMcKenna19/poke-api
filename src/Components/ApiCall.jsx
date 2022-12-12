@@ -7,7 +7,7 @@ const ApiCall = () => {
     const getPokemon = () =>{
         console.log("Pika");
         axios.get("https://pokeapi.co/api/v2/pokemon?limit=877").then(response => {
-            console.log(response);
+            console.log(response.data);
             return response.data;
         }).then(response =>{
             console.log(response.results);
@@ -27,6 +27,7 @@ const ApiCall = () => {
                 return(
                     <div key={j}>
                         <h3>{pokemon.name}</h3>
+                        {/* <img src={myPokemon.} alt="" /> */}
                     </div>
                 )
             })
