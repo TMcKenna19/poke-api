@@ -20,14 +20,14 @@ const NasaApiCall = () => {
 
     return(
         <>
-        <h1>NASA CALL</h1>
         <button type='button' className='btn btn-outline-dark  mt-2' onClick={getPhotos}>get photos</button>
         {
-            roverPhotos.map((photo, i) =>{
+            roverPhotos.map((photo, i ) => {
                 return(
                     <div key={i}>
                         <img src={photo.img_src} alt="nasa photos" height="500px" width="500px" />
                     </div>
+
                 )
             })
         }
@@ -37,3 +37,5 @@ const NasaApiCall = () => {
 };  
 
 export default NasaApiCall;
+
+                    
